@@ -16,17 +16,19 @@
           <tr>
             <th scope="col">Servicio Id</th>
             <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Phone</th>
+            <th scope="col">Type</th>
+            <th scope="col">Datos</th>
+            <th scope="col">Mision</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let servicio of Servicio">
             <td>{{servicio.id}}</td>
-            <td>{{servicio.name}}</td>
-            <td>{{servicio.email}}</td>
-            <td>{{servicio.phone}}</td>
+            <td>{{servicio.nombre}}</td>
+            <td>{{servicio.tipo}}</td>
+            <td>{{servicio.datosurl}}</td>
+            <td>{{servicio.mision}}</td>
             <td>
               <span class="edit" routerLink="/servicio-edit/{{servicio.id}}">Edit</span>
               <span class="delete" (click)="deleteServicio(servicio.id)">Delete</span>
