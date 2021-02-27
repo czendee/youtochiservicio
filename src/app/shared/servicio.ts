@@ -1,6 +1,7 @@
 export class Servicio {
    id: number;
-   name: string;
-   email: string;
-   phone: number;
+   nombre: string;
+   tipo: string;
+   datosurl: string;
+   mision: string;
 }
